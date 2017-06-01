@@ -36,7 +36,13 @@ module.exports = {
       {
         test: /\.css$/,
         include: helpers.root('src'),
+        exclude: helpers.root('src/styles'),
         loader: 'raw-loader'
+      },
+      {
+          include : helpers.root('src/styles'),
+          test: /\.css$/,
+          loaders: 'style-loader!css-loader'
       }
 
     ]

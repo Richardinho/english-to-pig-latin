@@ -2,6 +2,10 @@ import { Component} from '@angular/core';
 import { FormControl, FormGroup, FormBuilder } from '@angular/forms';
 import translateIntoPigLatin from './translate-into-pig';
 
+import './styles/reset.css';
+import './styles/main.css';
+
+
 export interface HistoryItem { pig: string; eng: string }
 
 @Component({
