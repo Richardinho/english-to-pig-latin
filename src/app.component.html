@@ -1,1 +1,12 @@
-<h2>This is my piglatin demo</h2>
+<h1>English to Pig-Latin translator</h1>
+<p>Type English in box on left. Translation will appear on box on the right. Click button to reset form and display last ten entries above.</p>
+
+<history *ngIf="entries.length > 0" [entries]="entries"></history>
+
+<form novalidate class="container"
+      [formGroup]="pigLatinForm" >
+    <textarea formControlName="userInput"></textarea>
+    <div class="display-area">{{ currentEntry.pig }}</div>
+</form>
+<button (click)="reset()" >reset</button>
+

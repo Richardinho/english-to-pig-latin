@@ -1,4 +1,39 @@
 :host {
     display : block;
-    background : red;
+
+    padding : 12px;
+}
+
+textarea {
+    width : 50%;
+    border : none;
+    resize: vertical;
+    outline : none;
+}
+
+.display-area {
+    background : #eee;
+    padding : 12px;
+    width : 50%;
+}
+
+h1 {
+    font-size : 20px;
+    line-height : 24px;
+    margin-bottom : 6px;
+}
+
+.container {
+    display : flex;
+    border : solid 3px #777;
+}
+
+button {
+    border : none;
+    background : deepskyblue;
+    color : white;
+    font-weight : bold;
+    text-decoration : uppercase;
+    padding : 8px 24px;
+    margin : 12px 0;
 }

@@ -1,0 +1,33 @@
+h2 {
+    font-style : italic;
+    font-size : 12px;
+    line-height : 1.4;
+}
+ul {
+    background : white;
+    display : block;
+    border : solid 3px #ddd;
+    margin-bottom : 12px;
+}
+
+ul, li {
+    width : 100%;
+    display : block;
+}
+li {
+    display : flex;
+    border-bottom : solid 1px #ccc;
+}
+li:last-child {
+    border-bottom : none;
+}
+
+.english,
+.pig {
+    width : 50%;
+    padding : 12px;
+}
+
+.pig {
+    background : #eee;
+}
